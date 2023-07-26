@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="test1_0.urdf">
-  <link name="baseLink">
+  <link concave = "yes" name="baseLink">
     <contact>
       <lateral_friction value="1.0"/>
       <inertia_scaling value="1.0"/>
@@ -13,13 +13,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-       <mesh filename="test1_0_vhacd.obj" scale="1 1 1"/>
+       <mesh filename="test1_0.obj" scale="1 1 1"/>
       </geometry>
        <material name="white">
         <color rgba="1 1 1 1"/>
       </material>
     </visual>
-    <collision>
+    <collision concave = "yes">
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="test1_0_vhacd.obj" scale="1 1 1"/>
